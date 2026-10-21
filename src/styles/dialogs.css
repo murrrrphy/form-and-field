@@ -1,0 +1,349 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #1a211b75;
+  backdrop-filter: blur(3px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade 0.2s ease;
+}
+.cart-drawer {
+  margin-left: auto;
+  background: #faf9f6;
+  width: 465px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  box-shadow: -10px 0 60px #0001;
+  overflow-y: auto;
+  animation: slide 0.25s ease;
+}
+.drawer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--line);
+}
+.drawer-heading h2 {
+  font-family: 'Libre Caslon Display', Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+.drawer-heading h2 span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #868c7a;
+}
+.shipping-progress {
+  padding: 22px 0;
+}
+.shipping-progress p {
+  font-size: 11px;
+  color: #6b745f;
+  margin-bottom: 13px;
+}
+.shipping-progress > div {
+  height: 3px;
+  background: #e2e3d8;
+}
+.shipping-progress > div > span {
+  display: block;
+  background: #7d8a65;
+  height: 100%;
+  transition: width 0.3s;
+}
+.cart-items {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 130px;
+}
+.cart-item {
+  display: flex;
+  gap: 17px;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cart-item > img {
+  width: 89px;
+  height: 112px;
+  object-fit: cover;
+}
+.cart-item > div {
+  flex: 1;
+  padding-right: 14px;
+}
+.cart-item .product-category {
+  margin: 0;
+  font-size: 8px;
+}
+.cart-item h3 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 8px 0 9px;
+}
+.cart-color {
+  font-size: 9px;
+  color: var(--muted);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.cart-color i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.cart-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9dccf;
+  height: 33px;
+}
+.quantity button {
+  width: 29px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.quantity > span {
+  min-width: 24px;
+  text-align: center;
+  font-size: 11px;
+}
+.cart-item-bottom strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+.remove-item {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  color: #8a8e80;
+}
+.cart-summary {
+  padding-top: 27px;
+}
+.cart-summary > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.cart-summary > div > strong {
+  font-weight: 500;
+}
+.cart-summary .total-row {
+  border-top: 1px solid var(--line);
+  padding-top: 17px;
+  font-size: 16px;
+}
+.cart-summary > p {
+  font-size: 9px;
+  color: #8a8e80;
+  margin: 10px 0 20px;
+}
+.cart-summary > .primary {
+  width: 100%;
+  font-size: 12px;
+  min-height: 48px;
+}
+.demo-note {
+  display: block;
+  text-align: center;
+  margin-top: 13px;
+  font-size: 9px;
+  color: #929587;
+}
+.product-modal {
+  background: #faf9f6;
+  position: relative;
+  width: 880px;
+  max-width: calc(100% - 50px);
+  display: grid;
+  grid-template-columns: 46% 54%;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 20px 80px #0002;
+}
+.modal-close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  z-index: 2;
+  background: #faf9f6e8;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+.detail-image {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+.detail-copy {
+  padding: 48px 36px 35px;
+}
+.detail-copy > .eyebrow {
+  color: #8a8f79;
+  font-size: 8px;
+}
+.detail-copy h2 {
+  font-family: 'Libre Caslon Display', Georgia, serif;
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 14px 0;
+}
+.detail-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 11px;
+  color: #6e795c;
+}
+.detail-rating span {
+  color: #8a8d81;
+  margin-left: 6px;
+}
+.detail-price {
+  font-size: 21px;
+  margin: 23px 0 18px;
+}
+.detail-price span {
+  font-size: 9px;
+  color: #909584;
+  margin-left: 8px;
+}
+.detail-copy > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #777c6e;
+}
+.material {
+  font-size: 10px;
+  line-height: 1.7;
+  border-bottom: 1px solid var(--line);
+  padding: 15px 0 20px;
+  color: #6c725e;
+}
+.color-label {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.detail-swatches {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0 24px;
+}
+.detail-swatches button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.detail-swatches .selected {
+  outline: 1px solid #7b846c;
+  outline-offset: 3px;
+}
+.detail-add {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+.detail-add .quantity {
+  height: 46px;
+}
+.detail-add .primary {
+  flex: 1;
+  gap: 8px;
+  font-size: 10px;
+  padding: 0 15px;
+}
+.detail-benefit {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 9px;
+  color: #858a78;
+  margin: 12px 0;
+}
+.checkout-message {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 35px 10px;
+  gap: 24px;
+}
+.success-circle {
+  width: 70px;
+  height: 70px;
+  background: #e5e9dc;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #657650;
+}
+.checkout-message h2 {
+  font-family: 'Libre Caslon Display', Georgia, serif;
+  font-size: 39px;
+  font-weight: 400;
+}
+.checkout-message p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.subscribe-success {
+  font-size: 12px;
+  color: var(--green);
+  line-height: 1.8;
+}
+.subscribe-success svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.subscribe-success small {
+  display: block;
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.mobile-nav {
+  display: none;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

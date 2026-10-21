@@ -1,0 +1,125 @@
+.story {
+  margin: 35px 5% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #eeeee5;
+  min-height: 335px;
+}
+.story > img {
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+  object-position: center 65%;
+}
+.story > div {
+  padding: 44px 12%;
+}
+.story .eyebrow {
+  font-size: 8px;
+  color: #777f60;
+}
+.story h2 {
+  font-family: 'Libre Caslon Display', Georgia, serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 17px 0;
+}
+.story h2 em {
+  font-weight: 400;
+  color: #7c8269;
+}
+.story p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #777b6d;
+  max-width: 350px;
+}
+.story a {
+  display: inline-flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 23px;
+  border-bottom: 1px solid #919783;
+  padding-bottom: 7px;
+}
+.newsletter {
+  padding: 65px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.newsletter .eyebrow {
+  color: #82886f;
+  font-size: 8px;
+}
+.newsletter h2 {
+  font-family: 'Libre Caslon Display', Georgia, serif;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.newsletter p {
+  font-size: 10px;
+  color: var(--muted);
+}
+.newsletter form {
+  width: 34%;
+  max-width: 430px;
+}
+.email-field {
+  display: flex;
+  border-bottom: 1px solid #9b9f8d;
+  padding: 10px 0;
+}
+.email-field input {
+  width: 100%;
+  border: 0;
+  background: none;
+  font-size: 11px;
+  padding: 6px 0;
+}
+.email-field input:focus {
+  outline: none;
+}
+.newsletter form > span {
+  font-size: 8px;
+  color: #929589;
+  display: block;
+  margin-top: 11px;
+}
+footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer .wordmark {
+  font-size: 18px;
+}
+footer .wordmark i {
+  font-size: 21px;
+}
+footer .wordmark > span {
+  font-size: 6px;
+  letter-spacing: 2.5px;
+}
+footer > span {
+  font-size: 8px;
+  color: #8c8e83;
+}
+footer > div {
+  display: flex;
+  gap: 25px;
+  font-size: 8px;
+  color: #74786b;
+}
+footer > div span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

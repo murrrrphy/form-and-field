@@ -1,0 +1,228 @@
+.shop-section {
+  padding: 60px 5% 0;
+}
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.section-heading .eyebrow {
+  color: #80866c;
+}
+.section-heading h2 {
+  font-family: 'Libre Caslon Display', Georgia, serif;
+  font-size: 43px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+.section-heading h2 > span {
+  color: #758258;
+}
+.section-heading p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  padding-bottom: 3px;
+}
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.category-tabs {
+  display: flex;
+  gap: 8px;
+}
+.category-tabs button {
+  padding: 10px 15px;
+  border: 1px solid #deded4;
+  border-radius: 2px;
+  font-size: 10px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.category-tabs button:hover {
+  border-color: #647153;
+}
+.category-tabs button.active {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+.category-tabs button span {
+  font-size: 8px;
+  margin-left: 8px;
+  opacity: 0.7;
+}
+.filter-button {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0 8px 12px;
+}
+.filter-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green);
+}
+.results-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 0 22px;
+  color: #898b82;
+  font-size: 9px;
+}
+.results-row label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.results-row select {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #464d3e;
+  font-size: 9px;
+  padding: 4px;
+  cursor: pointer;
+  max-width: 125px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px 21px;
+}
+.product-image {
+  position: relative;
+  aspect-ratio: 1/0.99;
+  background: #eae7e0;
+  overflow: hidden;
+}
+.product-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.product-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+.product-photo:hover img {
+  transform: scale(1.045);
+}
+.product-tag {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  background: #faf9f2;
+  padding: 6px 8px;
+  font-size: 7px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  pointer-events: none;
+}
+.new-tag {
+  background: #e6e9dd;
+  color: #56603e;
+}
+.save-button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #faf9f2df;
+  display: grid;
+  place-items: center;
+}
+.save-button.is-saved {
+  color: #7f5746;
+}
+.quick-add {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #faf9f3ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 31px;
+  padding: 0 11px;
+  font-size: 9px;
+  box-shadow: 0 1px 6px #00000006;
+  transition: background 0.2s;
+}
+.quick-add:hover {
+  background: var(--green);
+  color: white;
+}
+.product-category {
+  font-size: 8px;
+  color: #8b8b80;
+  margin-top: 15px;
+  letter-spacing: 0.4px;
+}
+.product-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 7px;
+  font-size: 12px;
+}
+.product-name button {
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.product-name > span {
+  font-size: 11px;
+  padding-top: 2px;
+}
+.swatches {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.swatches button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #00000008;
+}
+.swatches > span {
+  font-size: 8px;
+  color: #96978e;
+  margin-left: 4px;
+}
+.swatches .product-rating {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: #777e63;
+}
+.collection-end {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 9px;
+  letter-spacing: 0.3px;
+  color: #8c8e83;
+}
