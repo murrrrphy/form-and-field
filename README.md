@@ -1,4 +1,4 @@
-# Form & Field
+# Avelune
 
 A responsive, English-language lifestyle storefront built with React 19, Vite, and Lucide icons.
 
@@ -23,6 +23,8 @@ Open the local URL printed by Vite. Build with `npm run build`; serve that build
 Prices use USD. Shipping is $8 below $100 and free at or above $100. Product photography is illustrative and loaded from Unsplash; fonts load from Google Fonts. These assets require an internet connection. All inventory, reviews, and brand content are fictional demo data.
 
 ## GitHub Pages
+
+Avelune keeps the original repository slug and public URL so existing links continue to work.
 
 This project is published at https://murrrrphy.github.io/form-and-field/.
 Pushes to `main` trigger `.github/workflows/deploy.yml`, which installs locked dependencies, builds the app and deploys `dist` to GitHub Pages. In repository Settings → Pages, the source is GitHub Actions.

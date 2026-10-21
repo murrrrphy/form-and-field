@@ -1,5 +1,6 @@
 import { products } from '../data/products.js';
 
+// Keep the original key so returning visitors retain their bags after the rebrand.
 export const CART_STORAGE_KEY = 'ff-cart';
 export const MAX_QUANTITY = 99;
 export const FREE_SHIPPING_THRESHOLD = 100;

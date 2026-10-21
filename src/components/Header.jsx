@@ -27,8 +27,8 @@ export default function Header({
         </span>
       </div>
       <header>
-        <a className="wordmark" href="#" aria-label="Form and Field home">
-          FORM <i>&</i> FIELD<span>OBJECTS FOR EVERYDAY</span>
+        <a className="wordmark" href="#" aria-label="Avelune home">
+          AVELUNE<span>OBJECTS FOR EVERYDAY</span>
         </a>
         <nav>
           <button onClick={() => navigateToShop()} className="nav-active">

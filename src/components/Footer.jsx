@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer>
       <a className="wordmark" href="#">
-        FORM <i>&</i> FIELD<span>OBJECTS FOR EVERYDAY</span>
+        AVELUNE<span>OBJECTS FOR EVERYDAY</span>
       </a>
-      <span>© 2026 Form & Field. A little more considered.</span>
+      <span>© 2026 Avelune. A little more considered.</span>
       <div>
         <span>English / USD</span>
         <span>
